@@ -33,6 +33,7 @@ ICO = {
     'zu': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>',
     'links': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
     'rechts': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>',
+    'chat': '<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19Z"/></svg>',
     'schere': '<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="6.5" cy="17" r="2.8"/><circle cx="17.5" cy="17" r="2.8"/><path d="M8.5 15 17 3.5M15.5 15 7 3.5"/></svg>',
 }
 
@@ -160,7 +161,7 @@ def fuss(p):
     orte = []
     for s in SALONS:
         orte.append(f'''<li><h3><a href="{p}{s["id"]}/">{e(s["name"])}</a></h3><address>{e(s["strasse"])}<br>{s["plz"]} {e(s["ort"])}</address>
-<p><a class="tel" href="tel:{s["tel_int"]}">{e(s["tel"])}</a><br>{e(s["zeiten_text"])}</p></li>''')
+<p><a class="tel" href="tel:{s["tel_int"]}">{e(s["tel"])}</a><br>{e(s["zeiten_text"]).replace(" · ", "<br>")}</p></li>''')
     social = ''.join(f'<li><a href="{u}" rel="noopener">{e(n)}</a></li>' for n, u in D.get('social', []))
     return f'''<footer class="fuss">
   <div class="huelle">
@@ -219,7 +220,7 @@ def ring_karte(s, p, i):
 def ue_zeile(s, p, i):
     tun = buchen_knopf(s, 'knopf knopf-klein', 'Termin') if s.get('buchen') else f'<a class="knopf-still knopf-klein" href="tel:{s["tel_int"]}">{ICO["telefon"]}<span>Anrufen</span></a>'
     return (f'<li><div class="ue-name"><span class="nr">{i + 1:02d}</span><div><a href="{p}{s["id"]}/">{e(s["name"])}</a><small>{e(s["lage"])}</small></div></div>'
-            f'<p class="ue-adresse">{e(s["strasse"])}<br> {s["plz"]} {e(s["ort"])}</p>'
+            f'<p class="ue-adresse">{e(s["strasse"])},<br> {s["plz"]} {e(s["ort"])}</p>'
             f'<p class="ue-stand"><span class="stand" data-zeiten="{zeiten_attr(s)}">{e(s["zeiten_text"])}</span></p>'
             f'<p class="ue-tel"><a href="tel:{s["tel_int"]}">{e(s["tel"])}</a></p>'
             f'<div class="ue-tun">{tun}</div></li>')
@@ -412,7 +413,7 @@ def startseite():
         seite += abschnitt(f'{nr:02d}', 'Einblicke', e(D['galerie_titel']), galerie([(g[0], g[1]) for g in D['galerie']], p), 'einblicke')
         nr += 1
     if D.get('social_kanaele'):
-        k = ''.join(f'<a class="knopf-still" href="{u}" rel="noopener">{ICO["insta"]}<span>{e(n)}</span></a>' for n, u in D['social_kanaele'])
+        k = ''.join(f'<a class="knopf-still" href="{u}" rel="noopener">{ICO["chat" if "wa.me" in u else "insta"]}<span>{e(n)}</span></a>' for n, u in D['social_kanaele'])
         seite += f'''<section class="abschnitt anschluss" aria-labelledby="social-titel">
     <div class="huelle"><div class="ruf"><div><h2 id="social-titel">{e(D["social_titel"])}</h2><p>{e(D["social_text"])}</p></div><div class="knoepfe">{k}</div></div></div>
   </section>

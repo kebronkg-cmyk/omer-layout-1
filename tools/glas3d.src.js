@@ -47,7 +47,7 @@ const ZEICHEN = {
   J: { b: 50, z: [[['M', 50, 100], ['L', 50, 28], ['A', 25, 28, 25, 0, -180]]] },
   K: { b: 62, z: [[['M', 0, 0], ['L', 0, 100]], [['M', 60, 100], ['L', 4, 46]], [['M', 22, 63], ['L', 62, 0]]] },
   L: { b: 54, z: [[['M', 0, 100], ['L', 0, 0], ['L', 54, 0]]] },
-  N: { b: 66, z: [[['M', 0, 0], ['L', 0, 100], ['L', 66, 0], ['L', 66, 100]]] },
+  N: { b: 66, z: [[['M', 0, 0], ['L', 0, 100]], [['M', 2, 98], ['L', 64, 2]], [['M', 66, 0], ['L', 66, 100]]] },
   P: { b: 58, z: [[['M', 0, 0], ['L', 0, 100], ['L', 32, 100], ['A', 32, 74, 26, 90, -90], ['L', 0, 48]]] },
   Q: { b: 70, z: [[['M', 68, 34], ['L', 68, 66], ['A', 34, 66, 34, 0, 180], ['L', 0, 34], ['A', 34, 34, 34, 180, 360], ['Z']], [['M', 44, 22], ['L', 70, -4]]] },
   U: { b: 66, z: [[['M', 0, 100], ['L', 0, 33], ['A', 33, 33, 33, 180, 360], ['L', 66, 100]]] },
@@ -196,7 +196,7 @@ const STIMMUNG = {
 
 function umgebung(renderer, st) {
   const raum = new Scene();
-  raum.background = new Color('#020203');
+  raum.background = new Color('#020303');
   raum.add(new Mesh(new BoxGeometry(40, 40, 40), new MeshBasicMaterial({ color: '#030305', side: BackSide })));
   const leiste = (farbe, x, y, z, b, h, rx, ry, staerke) => {
     const m = new Mesh(new PlaneGeometry(b, h), new MeshBasicMaterial({ color: new Color(farbe).multiplyScalar(staerke), side: 2 }));
@@ -272,7 +272,7 @@ function start() {
   const szene = new Scene();
   const licht = umgebung(renderer, st);
   szene.environment = licht.env;
-  szene.background = new Color('#020203');
+  szene.background = new Color('#020303');
   const kamera = new PerspectiveCamera(36, 1, 0.1, 200);
   kamera.position.set(0, 0, 16);
 

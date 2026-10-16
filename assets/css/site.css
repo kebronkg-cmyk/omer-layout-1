@@ -17,10 +17,10 @@
 @property --winkel { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
 
 :root {
-  --grund: #020203;
+  --grund: #020303;
   --grund-2: #0c0c11;
   --grund-3: #14141b;
-  --glas: rgb(20 20 28 / .62);
+  --glas: rgb(21 22 22 / .62);
   --text: #f4f3f8;
   --text-2: #aeadbc;
   --text-3: #7c7b89;
@@ -912,7 +912,7 @@ html.kopf-weg .kapitel-halter { top: 0; }
 .ps-leistung:active { transform: scale(.985); }
 
 .ps-summe { position: sticky; bottom: 1rem; z-index: 20; display: none; align-items: center; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap; margin-top: .8rem; padding: 1rem 1.1rem 1rem 1.5rem; border-radius: 22px;
-  background: rgb(12 14 24 / .82); -webkit-backdrop-filter: blur(18px) saturate(1.3); backdrop-filter: blur(18px) saturate(1.3);
+  background: rgb(13 14 14 / .82); -webkit-backdrop-filter: blur(18px) saturate(1.3); backdrop-filter: blur(18px) saturate(1.3);
   border: 1px solid rgb(255 255 255 / .14); box-shadow: inset 0 1px 0 rgb(255 255 255 / .18), inset 0 -1px 0 rgb(47 214 196 / .3), 0 24px 50px -24px rgb(0 0 0 / .9); }
 .ps-an .ps-summe { display: flex; }
 .ps-summe.voll { border-color: rgb(47 214 196 / .5); box-shadow: inset 0 1px 0 rgb(255 255 255 / .2), 0 0 40px -14px var(--neon-schein), 0 24px 50px -24px rgb(0 0 0 / .9); }

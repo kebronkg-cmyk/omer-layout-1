@@ -42,6 +42,7 @@ def tabelle(th):
         '#8fd0ff': hexa(mischen(hell, eis, .3)), '#2f6bff': tief, '#1747c9': tief, '#1f5ee8': tief, '#14408f': tief, '#183a80': hexa(mischen(tief, '#05060a', .45)),
         '#0b2350': hexa(mischen(tief, '#05060a', .65)), '#0b1a3d': dunkel, '#0a1222': hexa(mischen(tief, '#05060a', .85)),
         '#5c7fc4': mittel, '#222b42': dunkel,
+        '#020203': th.get('grund', '#020203'),   # Seitengrund, auch hinter den 3D-Szenen
     }
     rgbs = {
         (63, 130, 255): rgb(a), (91, 140, 255): rgb(a), (23, 71, 201): rgb(tief), (143, 186, 255): rgb(hell),
@@ -61,6 +62,11 @@ def einfaerben(text, th):
     H = rgb(th['hell'])
     text = text.replace('`rgba(${(150 + 105 * t) | 0},${(195 + 60 * t) | 0},255,',
                         f'`rgba(${{({H[0]} + {255 - H[0]} * t) | 0}},${{({H[1]} + {255 - H[1]} * t) | 0}},${{({H[2]} + {255 - H[2]} * t) | 0}},')
+    # kühle Dunkeltöne der Vorlage (Glasflächen) an den Seitengrund angleichen
+    g = th.get('grund', '#020203')
+    for alt, anteil in (('12 14 24', .045), ('20 20 28', .075)):
+        R, G, B = (round(v) for v in mischen(g, '#ffffff', anteil))
+        text = text.replace(f'rgb({alt} ', f'rgb({R} {G} {B} ')
     # Kopfkommentare der Vorlage auf die Marke umstellen
     text = text.replace("Omer's Hair Professional", MARKE)
     text = text.replace(' (Blau aus dem Leuchtschild am Isartor)', '')
