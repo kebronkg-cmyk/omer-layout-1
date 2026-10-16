@@ -1,0 +1,546 @@
+{
+ "marke": "Nazar Friseur",
+ "titel": "Nazar Friseur | Barbershop in Moosach, Maxvorstadt, Sendling und Oberhaching",
+ "beschreibung": "Nazar Friseur: vier Barbershops in München und Oberhaching. Haarschnitt, Kontur, Bart und Farbe. Montag bis Samstag geöffnet, Termin online oder per Telefon.",
+ "riesen": [
+  "Nazar",
+  "Friseur"
+ ],
+ "h1": [
+  "Schnitt, Kontur, Bart.",
+  "Vier Salons rund um München."
+ ],
+ "etikett": "Barbershop · München",
+ "ring_titel": "Vier Salons. Ein Handwerk.",
+ "wortmarke_html": "<b>NAZAR</b><i>FRISEUR</i>",
+ "schema_typ": "BarberShop",
+ "thema": {
+  "a": "#2fd6c4",
+  "hell": "#8ff0e6",
+  "eis": "#d6fffa",
+  "tief": "#0c8f86",
+  "grund": "#020303",
+  "zusatz_css": "zusatz.css"
+ },
+ "licht": {
+  "blau": "#12c4b3",
+  "eis": "#9ff5ec",
+  "glas": "#d2fff8",
+  "wolken": [
+   "#0b8f86",
+   "#2fd6c4",
+   "#c4fff6"
+  ]
+ },
+ "leistungen_titel": "Was wir machen.",
+ "leistungen_text": "Klassisch oder modern. Jeder Schnitt wird mit Maschine, Schere und Messer sauber ausgearbeitet.",
+ "leistungen": [
+  {
+   "name": "Haarschnitt",
+   "text": "Vom klassischen Herrenschnitt bis zum Fade. Abgestimmt auf Kopfform und Wirbel."
+  },
+  {
+   "name": "Kontur",
+   "text": "Scharfe Linien an Stirn, Nacken und Schläfe. Mit dem Messer nachgezogen."
+  },
+  {
+   "name": "Bart",
+   "text": "Bart in Form schneiden, Konturen setzen, pflegen. Auf Wunsch mit heißem Tuch."
+  },
+  {
+   "name": "Färben & Tönen",
+   "text": "Grau abdecken, Farbe auffrischen oder einen neuen Ton ausprobieren."
+  },
+  {
+   "name": "Hautbehandlung",
+   "text": "Gesichtspflege nach dem Schnitt. Reinigt und beruhigt die Haut."
+  },
+  {
+   "name": "Styling",
+   "text": "Waschen, föhnen, stylen. Mit den passenden Produkten für zu Hause."
+  }
+ ],
+ "team_titel": "Die Leute hinter dem Stuhl.",
+ "team_text": "Ein Team, vier Salons. Wer heute wo arbeitet, sagt Ihnen der Salon am Telefon.",
+ "team": [
+  {
+   "name": "Ivan",
+   "rolle": "Geschäftsführung",
+   "bild": "team-ivan"
+  },
+  {
+   "name": "Rizkar",
+   "rolle": "Geschäftsführung",
+   "bild": "team-rizkar"
+  },
+  {
+   "name": "Sam",
+   "rolle": "Friseur",
+   "bild": "team-sam"
+  },
+  {
+   "name": "Amira",
+   "rolle": "Friseurin",
+   "bild": "team-amira"
+  }
+ ],
+ "galerie_titel": "Aus dem Salon.",
+ "galerie": [
+  [
+   "g-schere",
+   "Schnitt mit Schere und Kamm"
+  ],
+  [
+   "g-maschine",
+   "Konturschnitt mit der Maschine"
+  ],
+  [
+   "g-waschen",
+   "Haarwäsche am Waschbecken"
+  ],
+  [
+   "g-wachs",
+   "Stylingprodukt in der Hand"
+  ],
+  [
+   "g-produkte",
+   "Pflegeprodukte im Regal"
+  ],
+  [
+   "g-regal",
+   "Regal mit Produkten im Salon"
+  ]
+ ],
+ "social": [
+  [
+   "Instagram",
+   "https://www.instagram.com/nazar_friseur_moosach/"
+  ]
+ ],
+ "social_titel": "Neue Schnitte jede Woche.",
+ "social_text": "Jeder Salon zeigt seine Arbeit auf Instagram. Folgen Sie Ihrem Salon.",
+ "social_kanaele": [
+  [
+   "Moosach",
+   "https://www.instagram.com/nazar_friseur_moosach/"
+  ],
+  [
+   "Stiglmaierplatz",
+   "https://www.instagram.com/nazar_friseur_stiglmaierplatz/"
+  ],
+  [
+   "Sendling",
+   "https://www.instagram.com/nazar_friseur_sendling1/"
+  ],
+  [
+   "Oberhaching",
+   "https://www.instagram.com/nazar.friseur.oberhaching/"
+  ]
+ ],
+ "quellen": "nazar-friseur.de, Instagram, Treatwell, Salonkee, OpenStreetMap",
+ "stand": "Oktober 2026",
+ "original_impressum": "https://nazar-friseur.de/imprint/",
+ "salons": [
+  {
+   "id": "moosach",
+   "name": "Nazar Friseur Moosach",
+   "kurzname": "Moosach",
+   "glas": "MOOSACH",
+   "lage": "Moosach",
+   "lage_lang": "Moosach, im Münchner Nordwesten",
+   "strasse": "Bunzlauer Str. 10",
+   "plz": "80992",
+   "ort": "München",
+   "tel": "089 52067566",
+   "tel_int": "+498952067566",
+   "zeiten": {
+    "1": [
+     [
+      9,
+      19
+     ]
+    ],
+    "2": [
+     [
+      9,
+      19
+     ]
+    ],
+    "3": [
+     [
+      9,
+      19
+     ]
+    ],
+    "4": [
+     [
+      9,
+      19
+     ]
+    ],
+    "5": [
+     [
+      9,
+      19
+     ]
+    ],
+    "6": [
+     [
+      9,
+      19
+     ]
+    ],
+    "0": []
+   },
+   "zeiten_text": "Mo bis Sa 9:00 bis 19:00",
+   "buchen": "https://buchung.treatwell.de/ort/nazar-friseur-1/",
+   "karte": "laden",
+   "karte_alt": "Empfang und Arbeitsplätze, an der Wand der Schriftzug Nazar Friseur",
+   "lat": 48.1801706,
+   "lon": 11.5074992,
+   "instagram": "https://www.instagram.com/nazar_friseur_moosach/",
+   "h1": "Moosach",
+   "beschreibung": "Nazar Friseur in Moosach, Bunzlauer Str. 10. Haarschnitt, Kontur und Bart. Mo bis Sa 9 bis 19 Uhr. Termin online über Treatwell.",
+   "hinweise": [
+    "Termin online über Treatwell"
+   ],
+   "bewertung": {
+    "wert": "4,9",
+    "anzahl": 198
+   },
+   "glas_hoch": "MOO|SACH"
+  },
+  {
+   "id": "stiglmaierplatz",
+   "name": "Nazar Friseur Stiglmaierplatz",
+   "kurzname": "Stiglmaierplatz",
+   "glas": "STIGLMAIER",
+   "lage": "Maxvorstadt",
+   "lage_lang": "Maxvorstadt, am Stiglmaierplatz",
+   "strasse": "Gabelsbergerstr. 70",
+   "plz": "80333",
+   "ort": "München",
+   "tel": "089 24584460",
+   "tel_int": "+498924584460",
+   "zeiten": {
+    "1": [
+     [
+      9,
+      20
+     ]
+    ],
+    "2": [
+     [
+      9,
+      20
+     ]
+    ],
+    "3": [
+     [
+      9,
+      20
+     ]
+    ],
+    "4": [
+     [
+      9,
+      20
+     ]
+    ],
+    "5": [
+     [
+      9,
+      20
+     ]
+    ],
+    "6": [
+     [
+      9,
+      20
+     ]
+    ],
+    "0": []
+   },
+   "zeiten_text": "Mo bis Sa 9:00 bis 20:00",
+   "buchen": "https://salonkee.de/salon/nazar-friseur-stiglmaierplatz",
+   "karte": "schnitt",
+   "karte_alt": "Barbier schneidet einem Kunden die Haare",
+   "lat": 48.1500153,
+   "lon": 11.5597931,
+   "instagram": "https://www.instagram.com/nazar_friseur_stiglmaierplatz/",
+   "h1": "Stiglmaierplatz",
+   "beschreibung": "Nazar Friseur am Stiglmaierplatz, Gabelsbergerstr. 70. Haarschnitt, Kontur und Bart. Mo bis Sa 9 bis 20 Uhr. Termin online über Salonkee.",
+   "hinweise": [
+    "U1 und U7 Stiglmaierplatz",
+    "Termin online über Salonkee"
+   ],
+   "glas_hoch": "STIGL|MAIER"
+  },
+  {
+   "id": "sendling",
+   "name": "Nazar Friseur Sendling",
+   "kurzname": "Sendling",
+   "glas": "SENDLING",
+   "lage": "Sendling",
+   "lage_lang": "Sendling-Westpark, an der Waldfriedhofstraße",
+   "strasse": "Waldfriedhofstr. 30",
+   "plz": "81377",
+   "ort": "München",
+   "tel": "089 7147538",
+   "tel_int": "+49897147538",
+   "zeiten": {
+    "1": [
+     [
+      9,
+      19
+     ]
+    ],
+    "2": [
+     [
+      9,
+      19
+     ]
+    ],
+    "3": [
+     [
+      9,
+      19
+     ]
+    ],
+    "4": [
+     [
+      9,
+      19
+     ]
+    ],
+    "5": [
+     [
+      9,
+      19
+     ]
+    ],
+    "6": [
+     [
+      9,
+      19
+     ]
+    ],
+    "0": []
+   },
+   "zeiten_text": "Mo bis Sa 9:00 bis 19:00",
+   "buchen": "",
+   "karte": "lounge",
+   "karte_alt": "Waschplätze und Ledersofa im Salon",
+   "lat": 48.113311,
+   "lon": 11.5121781,
+   "instagram": "https://www.instagram.com/nazar_friseur_sendling1/",
+   "h1": "Sendling",
+   "beschreibung": "Nazar Friseur in Sendling, Waldfriedhofstr. 30. Haarschnitt, Kontur und Bart. Mo bis Sa 9 bis 19 Uhr. Termin per Telefon.",
+   "hinweise": [
+    "Termin per Telefon"
+   ],
+   "glas_hoch": "SEND|LING"
+  },
+  {
+   "id": "oberhaching",
+   "name": "Nazar Friseur Oberhaching",
+   "kurzname": "Oberhaching",
+   "glas": "OBERHACHING",
+   "lage": "Oberhaching",
+   "lage_lang": "Oberhaching, im Süden von München",
+   "strasse": "Stefanienstr. 7",
+   "plz": "82041",
+   "ort": "Oberhaching",
+   "tel": "089 24291564",
+   "tel_int": "+498924291564",
+   "zeiten": {
+    "1": [
+     [
+      9,
+      19
+     ]
+    ],
+    "2": [
+     [
+      9,
+      19
+     ]
+    ],
+    "3": [
+     [
+      9,
+      19
+     ]
+    ],
+    "4": [
+     [
+      9,
+      19
+     ]
+    ],
+    "5": [
+     [
+      9,
+      19
+     ]
+    ],
+    "6": [
+     [
+      9,
+      19
+     ]
+    ],
+    "0": []
+   },
+   "zeiten_text": "Mo bis Sa 9:00 bis 19:00",
+   "buchen": "https://salonkee.de/salon/nazar-friseur-oberhaching",
+   "karte": "kontur",
+   "karte_alt": "Konturschnitt mit der Haarschneidemaschine",
+   "lat": 48.0179487,
+   "lon": 11.5906365,
+   "instagram": "https://www.instagram.com/nazar.friseur.oberhaching/",
+   "h1": "Oberhaching",
+   "beschreibung": "Nazar Friseur in Oberhaching, Stefanienstr. 7. Haarschnitt, Kontur und Bart. Mo bis Sa 9 bis 19 Uhr. Termin online über Salonkee.",
+   "hinweise": [
+    "Termin online über Salonkee"
+   ],
+   "glas_hoch": "OBER|HACHING"
+  }
+ ],
+ "bilder": {
+  "laden": {
+   "datei": "frisekrise.00_09_40_10.Standbild011.webp",
+   "seiten": 1.3333,
+   "breiten": [
+    900,
+    1440
+   ]
+  },
+  "schnitt": {
+   "datei": "frisekrise.00_10_13_26.Standbild021.webp",
+   "seiten": 1.3333,
+   "breiten": [
+    900,
+    1440
+   ]
+  },
+  "lounge": {
+   "datei": "frisekrise.00_09_46_19.Standbild012.webp",
+   "seiten": 1.3333,
+   "breiten": [
+    900,
+    1440
+   ]
+  },
+  "kontur": {
+   "datei": "frisekrise.00_10_04_11.Standbild017.webp",
+   "seiten": 1.3333,
+   "breiten": [
+    900,
+    1440
+   ]
+  },
+  "g-schere": {
+   "datei": "frisekrise.00_04_28_01.Standbild007.webp",
+   "zuschnitt": [
+    0,
+    0,
+    0.9,
+    1
+   ],
+   "seiten": 1.5,
+   "breiten": [
+    900,
+    1600
+   ]
+  },
+  "g-maschine": {
+   "datei": "frisekrise.00_04_02_21.Standbild003.webp",
+   "zuschnitt": [
+    0,
+    0,
+    0.9,
+    1
+   ],
+   "seiten": 1.5,
+   "breiten": [
+    900,
+    1600
+   ]
+  },
+  "g-waschen": {
+   "datei": "frisekrise.00_11_25_12.Standbild027.webp",
+   "seiten": 1.5,
+   "breiten": [
+    900,
+    1600
+   ]
+  },
+  "g-wachs": {
+   "datei": "frisekrise.00_11_45_02.Standbild030.webp",
+   "seiten": 1.5,
+   "breiten": [
+    900,
+    1600
+   ]
+  },
+  "g-produkte": {
+   "datei": "frisekrise.00_04_48_04.Standbild008.webp",
+   "zuschnitt": [
+    0,
+    0,
+    0.9,
+    1
+   ],
+   "seiten": 1.5,
+   "breiten": [
+    900,
+    1600
+   ]
+  },
+  "g-regal": {
+   "datei": "frisekrise.00_10_20_02.Standbild023.webp",
+   "seiten": 1.5,
+   "breiten": [
+    900,
+    1600
+   ]
+  },
+  "team-ivan": {
+   "datei": "ivan-scaled.webp",
+   "seiten": 0.8,
+   "oben": 0.2,
+   "breiten": [
+    480,
+    800
+   ]
+  },
+  "team-rizkar": {
+   "datei": "riscar-scaled.webp",
+   "seiten": 0.8,
+   "oben": 0.2,
+   "breiten": [
+    480,
+    800
+   ]
+  },
+  "team-sam": {
+   "datei": "sam-scaled.webp",
+   "seiten": 0.8,
+   "oben": 0.2,
+   "breiten": [
+    480,
+    800
+   ]
+  },
+  "team-amira": {
+   "datei": "amira-scaled.webp",
+   "seiten": 0.8,
+   "oben": 0.2,
+   "breiten": [
+    480,
+    800
+   ]
+  }
+ }
+}

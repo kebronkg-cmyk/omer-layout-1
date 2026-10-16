@@ -1,0 +1,36 @@
+
+/* ---------- Ergänzungen dieses Konzepts ---------- */
+
+/* Wortmarke statt Logo: Name groß, Zusatz als Neon */
+.wortmarke { display: inline-grid; justify-items: start; line-height: .9; text-decoration: none; }
+.wortmarke b { font-weight: 600; font-size: 1.28rem; letter-spacing: .16em; color: var(--text); }
+.wortmarke i { font-style: normal; font-weight: 400; font-size: .62rem; letter-spacing: .58em; color: var(--blau-hell); text-shadow: 0 0 10px var(--neon-schein), 0 0 22px var(--neon-schein); margin-top: .28rem; }
+.vorhang-mitte .wortmarke { justify-items: center; animation: logo-auf 1s var(--kurve-weich) .25s backwards; }
+.vorhang-mitte .wortmarke b { font-size: clamp(2rem, 4.4vw, 3rem); letter-spacing: .2em; margin-right: -.2em; }
+.vorhang-mitte .wortmarke i { font-size: clamp(.8rem, 1.6vw, 1rem); margin-right: -.58em; margin-top: .6rem; }
+
+/* Leistungen ohne Preise: Kacheln über die volle Breite */
+.leistung-raster { grid-column: 1 / -1; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.leistung-raster li:nth-child(n+4) { border-top: 1px solid var(--linie); }
+.leistung-raster .nr { margin-bottom: 2.4rem; }
+@media (max-width: 64rem) { .leistung-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); } .leistung-raster li:nth-child(n+3) { border-top: 1px solid var(--linie); } }
+@media (max-width: 34rem) { .leistung-raster { grid-template-columns: 1fr; } }
+
+/* Team */
+.team { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--linie-2); }
+.person { padding: var(--innen); border-right: 1px solid var(--linie); }
+.person:last-child { border-right: 0; }
+.person figure { margin: 0; display: grid; gap: .9rem; }
+.person img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; box-shadow: 0 0 0 1px rgb(255 255 255 / .08); transition: filter var(--t2) var(--kurve); }
+.person figcaption { display: grid; gap: .15rem; }
+.person b { font-size: 1.25rem; font-weight: 500; letter-spacing: -.02em; }
+.person span { font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text-3); }
+@media (hover: hover) and (pointer: fine) { .person:hover img { filter: brightness(1.08) saturate(1.1); } }
+@media (max-width: 52rem) {
+  .team { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .person:nth-child(2n) { border-right: 0; }
+  .person:nth-child(n+3) { border-top: 1px solid var(--linie); }
+}
+
+/* Schwarzweiß-Fotos: ein Hauch Markenfarbe in den Schatten */
+.galerie img, .ring-bild img, .front-bild img { filter: contrast(1.04); }
